@@ -1,0 +1,19 @@
+{
+  "name": "reassure-examples-root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Examples for Reassure performance testing library",
+  "keywords": [
+    "react",
+    "react-native",
+    "performance",
+    "testing"
+  ],
+  "repository": "https://github.com/callstack/reassure-examples",
+  "author": "Maciej Jastrzębski <mdjastrzebski@gmail.com> (https://github.com/mdjastrzebski)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callstack/reassure/issues"
+  },
+  "homepage": "https://github.com/callstack/reassure#readme"
+}
