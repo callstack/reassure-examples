@@ -6,7 +6,28 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: '/'
+    directory: '/examples/native'
+    schedule:
+      interval: 'daily'
+    allow:
+      - dependency-name: 'reassure'
+
+- package-ecosystem: npm
+    directory: '/examples/native-expo'
+    schedule:
+      interval: 'daily'
+    allow:
+      - dependency-name: 'reassure'
+
+- package-ecosystem: npm
+    directory: '/examples/web-vite'
+    schedule:
+      interval: 'daily'
+    allow:
+      - dependency-name: 'reassure'
+
+  - package-ecosystem: npm
+    directory: '/examples/web-nextjs'
     schedule:
       interval: 'daily'
     allow:
