@@ -12,14 +12,14 @@ updates:
     allow:
       - dependency-name: 'reassure'
 
-- package-ecosystem: npm
+  - package-ecosystem: npm
     directory: '/examples/native-expo'
     schedule:
       interval: 'daily'
     allow:
       - dependency-name: 'reassure'
 
-- package-ecosystem: npm
+  - package-ecosystem: npm
     directory: '/examples/web-vite'
     schedule:
       interval: 'daily'
