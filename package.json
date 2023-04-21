@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/callstack/reassure/issues"
   },
-  "homepage": "https://github.com/callstack/reassure#readme"
+  "homepage": "https://github.com/callstack/reassure#readme",
+  "workspaces": {
+    "nohoist": [
+      "examples/**"
+    ]
+  }
 }
