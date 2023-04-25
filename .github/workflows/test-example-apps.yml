@@ -16,7 +16,10 @@ jobs:
           node-version: 14.x
           cache: 'yarn'
 
-      - name: Install and build
+      - name: Install Root
+        run: yarn --cwd examples/native install
+
+      - name: Install Example
         run: yarn --cwd examples/native install
 
       - name: Validate TypeScript
