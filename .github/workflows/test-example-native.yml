@@ -16,20 +16,20 @@ jobs:
           node-version: 14.x
           cache: 'yarn'
 
+      - name: Install and build
+        run: yarn --cwd examples/native install
+
       - name: Validate TypeScript
-        run: yarn typecheck
+        run: yarn --cwd examples/native typecheck
 
       - name: Validate ESLint
-        run: yarn lint
+        run: yarn --cwd examples/native lint
 
       - name: Run tests
-        run: yarn test
-
-      - name: Install and build
-        run: cd examples/native && yarn install
+        run: yarn --cwd examples/native test
 
       - name: Run perf tests
-        run: cd examples/native && ./reassure-tests.sh
+        run: yarn --cwd examples/native ./reassure-tests.sh
 
       - name: Run Danger.js
         run: yarn danger ci
