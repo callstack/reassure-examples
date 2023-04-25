@@ -1,4 +1,4 @@
-name: Test Example Apps
+name: Main
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   test-native:
-    name: Text React Native CLI Example
+    name: Test React Native CLI Example
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16.x
           cache: 'yarn'
 
       - name: Install Root
