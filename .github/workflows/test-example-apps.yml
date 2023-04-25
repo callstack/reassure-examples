@@ -1,10 +1,10 @@
-name: Test Example Apps
+name: Test Example Native
 
 on: [workflow_dispatch]
 
 jobs:
-  test-native-expo:
-    name: Run perf test in Native Expo
+  test-native:
+    name: Run perf test in Native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,35 +16,23 @@ jobs:
           node-version: 14.x
           cache: 'yarn'
 
-      - name: Install and build
-        run: cd examples/native-expo && yarn install
+      - name: Install Root
+        run: yarn install
+
+      - name: Install Example
+        run: yarn --cwd examples/native install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/native typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/native lint
+
+      - name: Run tests
+        run: yarn --cwd examples/native test
 
       - name: Run perf tests
-        run: cd examples/native-expo && ./reassure-tests.sh
-
-      - name: Run Danger.js
-        run: yarn danger ci
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  test-web-vite:
-    name: Run perf test in Web Vite
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14.x
-          cache: 'yarn'
-
-      - name: Install and build
-        run: cd examples/web-vite && yarn install
-
-      - name: Run perf tests
-        run: cd examples/web-vite && ./reassure-tests.sh
+        run: cd examples/native && ./reassure-tests.sh
 
       - name: Run Danger.js
         run: yarn danger ci

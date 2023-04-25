@@ -20,5 +20,10 @@
     "nohoist": [
       "examples/**"
     ]
-  }
+  },
+  "devDependencies": {
+    "danger": "^11.2.6",
+    "reassure": "^0.8.0"
+  },
+  "dependencies": {}
 }
