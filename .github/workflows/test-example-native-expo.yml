@@ -1,0 +1,37 @@
+name: Test Example Native Expo
+
+on: [workflow_dispatch]
+
+jobs:
+  test-native:
+    name: Run perf test in Native Expo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+
+      - name: Install and build
+        run: yarn --cwd examples/native-expo install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/native-expo typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/native-expo lint
+
+      - name: Run tests
+        run: yarn --cwd examples/native-expo test
+
+      - name: Run perf tests
+        run: yarn --cwd examples/native-expo ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
