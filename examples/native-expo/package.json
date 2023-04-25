@@ -9,6 +9,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest",
+    "lint": "eslint .",
     "perf-test": "reassure",
     "typecheck": "tsc --noEmit"
   },
@@ -21,7 +22,9 @@
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
+    "eslint": "8.34.0",
     "@babel/core": "^7.19.3",
+    "@callstack/eslint-config": "^13.0.2",
     "@testing-library/react-native": "^11.2.0",
     "@types/jest": "^29.1.1",
     "@types/react": "~18.0.0",
