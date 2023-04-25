@@ -20,6 +20,5 @@
     "nohoist": [
       "examples/**"
     ]
-  },
-  "dependencies": {}
+  }
 }
