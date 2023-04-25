@@ -20,5 +20,8 @@
     "nohoist": [
       "examples/**"
     ]
+  },
+  "dependencies": {
+    "reassure": "^0.9.0"
   }
 }
