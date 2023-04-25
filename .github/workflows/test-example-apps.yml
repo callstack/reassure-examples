@@ -29,7 +29,7 @@ jobs:
         run: yarn --cwd examples/native test
 
       - name: Run perf tests
-        run: cd examples/native && reassure-tests.sh
+        run: cd examples/native && ./reassure-tests.sh
 
       - name: Run Danger.js
         run: yarn danger ci
