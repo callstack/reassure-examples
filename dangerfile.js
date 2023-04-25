@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('node:path');
 const { dangerReassure } = require('@callstack/reassure-danger');
 
