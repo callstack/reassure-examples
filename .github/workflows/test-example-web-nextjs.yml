@@ -1,0 +1,37 @@
+name: Test Example Web Nextjs
+
+on: [workflow_dispatch]
+
+jobs:
+  test-web-nextjs:
+    name: Run perf test in Web Nextjs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+
+      - name: Validate TypeScript
+        run: yarn typecheck
+
+      - name: Validate ESLint
+        run: yarn lint
+
+      - name: Run tests
+        run: yarn test
+
+      - name: Install and build
+        run: cd examples/web-nextjs && yarn install
+
+      - name: Run perf tests
+        run: cd examples/web-nextjs && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
