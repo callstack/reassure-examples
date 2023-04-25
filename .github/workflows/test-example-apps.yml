@@ -8,7 +8,7 @@ on:
 
 jobs:
   test-native:
-    name: Run perf test in Native
+    name: Text React Native CLI Example
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
