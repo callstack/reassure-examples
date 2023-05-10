@@ -1,4 +1,4 @@
-name: Main
+name: Test Example Apps
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 14.x
           cache: 'yarn'
 
       - name: Install Root
@@ -37,6 +37,114 @@ jobs:
 
       - name: Run perf tests
         run: cd examples/native && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-native-expo:
+    name: Test React Native Expo CLI Example
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+
+      - name: Install Root
+        run: yarn install
+
+      - name: Install Example
+        run: yarn --cwd examples/native-expo install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/native-expo typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/native-expo lint
+
+      - name: Run tests
+        run: yarn --cwd examples/native-expo test
+
+      - name: Run perf tests
+        run: cd examples/native-expo && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-web-nextjs:
+    name: Test Web Nextjs Example
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+
+      - name: Install Root
+        run: yarn install
+
+      - name: Install Example
+        run: yarn --cwd examples/web-nextjs install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/web-nextjs typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/web-nextjs lint
+
+      - name: Run tests
+        run: yarn --cwd examples/web-nextjs test
+
+      - name: Run perf tests
+        run: cd examples/web-nextjs && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-web-vite:
+    name: Test Web Vite Example
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+
+      - name: Install Root
+        run: yarn install
+
+      - name: Install Example
+        run: yarn --cwd examples/web-vite install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/web-vite typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/web-vite lint
+
+      - name: Run tests
+        run: yarn --cwd examples/web-vite test
+
+      - name: Run perf tests
+        run: cd examples/web-vite && ./reassure-tests.sh
 
       - name: Run Danger.js
         run: yarn danger ci

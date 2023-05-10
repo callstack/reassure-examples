@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@types/node": "18.14.1",
@@ -22,7 +23,9 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "eslint": "8.34.0",
     "@babel/preset-env": "^7.20.2",
+    "@callstack/eslint-config": "^13.0.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.0",
     "@testing-library/react": "^14.0.0",
