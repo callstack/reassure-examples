@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "danger": "^11.2.6",
-    "reassure": "^0.9.0"
+    "reassure": "^1.0.0-beta"
   },
   "dependencies": {}
 }
