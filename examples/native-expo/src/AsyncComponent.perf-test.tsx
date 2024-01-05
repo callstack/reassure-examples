@@ -1,7 +1,10 @@
 import * as React from 'react';
-import { fireEvent, screen } from '@testing-library/react';
+import { View, Text, Pressable } from 'react-native';
+import { screen, fireEvent } from '@testing-library/react-native';
 import { measureRenders } from 'reassure';
 import { SlowList } from './SlowList';
+
+jest.setTimeout(60_000);
 
 const AsyncComponent = () => {
   const [count, setCount] = React.useState(0);
@@ -11,34 +14,31 @@ const AsyncComponent = () => {
   };
 
   return (
-    <div>
-      <button onClick={handlePress}>Action</button>
-      <span>Count: {count}</span>
+    <View>
+      <Pressable accessibilityRole="button" onPress={handlePress}>
+        <Text>Action</Text>
+      </Pressable>
+
+      <Text>Count: {count}</Text>
 
       <SlowList count={200} />
-    </div>
+    </View>
   );
 };
 
-jest.setTimeout(60_000);
-
-test('SlowList', async () => {
-  await measureRenders(<AsyncComponent />);
-});
-
-test('AsyncComponent', async () => {
+test('Async Component', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
-    fireEvent.click(button);
+    fireEvent.press(button);
     await screen.findByText('Count: 1');
 
-    fireEvent.click(button);
+    fireEvent.press(button);
     await screen.findByText('Count: 2');
 
-    fireEvent.click(button);
-    fireEvent.click(button);
-    fireEvent.click(button);
+    fireEvent.press(button);
+    fireEvent.press(button);
+    fireEvent.press(button);
     await screen.findByText('Count: 5');
   };
 
