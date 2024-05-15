@@ -1009,23 +1009,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@callstack/reassure-cli@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.8.0.tgz#082ab9acfa39259735aa80cd56c0d4519e60ad98"
-  integrity sha512-qckdbcyDyLJ3AYbGDXg93q4b2szPLfprkhldUS0TLpxz0ZEAyWCplHTVX9q6ipiAc5L0tNOxNufFDz0Fjkwh7A==
+"@callstack/reassure-cli@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.9.1.tgz#331762ee9123560360d61b044055fb9229e4b7d4"
+  integrity sha512-ctETa5REyA1KM50Q9MMdy9oLqMK1eQp3Uc5cmx1VNQrAY678xCqIbiK4Hi3r5kZeq9k+JzsRgs9j+h6yrP8Lyw==
   dependencies:
-    "@callstack/reassure-compare" "0.4.1"
-    "@callstack/reassure-logger" "0.3.0"
+    "@callstack/reassure-compare" "0.5.1"
+    "@callstack/reassure-logger" "0.3.1"
     chalk "4.1.2"
     simple-git "^3.16.0"
     yargs "^17.6.2"
 
-"@callstack/reassure-compare@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-0.4.1.tgz#a6ba806fbe51cea0bc7fdc03e727d91207a21c50"
-  integrity sha512-FJ2QOnloioe73vleC+gmNqpEr3hy8LqNcuibPiJor8BaVIpwNkzV4FhVuolEeNrQ1b5gu5U29anyTsiK6sXCgw==
+"@callstack/reassure-compare@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-0.5.1.tgz#61be2fb1aa53a69d0270cebc3480e605a066f702"
+  integrity sha512-w3/W+1N8pNSdmoT0EZ0fTnhxqeIfkqTrLTrIGQQTgPbaekCSbvojG9eceHQ+XOsZfM3Y9tgDS5Uwx6k9h0JY5g==
   dependencies:
-    "@callstack/reassure-logger" "0.3.0"
+    "@callstack/reassure-logger" "0.3.1"
     markdown-builder "^0.9.0"
     markdown-table "^2.0.0"
     zod "^3.20.2"
@@ -1035,19 +1035,19 @@
   resolved "https://registry.yarnpkg.com/@callstack/reassure-danger/-/reassure-danger-0.1.1.tgz#e3aa581dc8b698c18ecb6eb15d7759fdcba5d8a4"
   integrity sha512-lfza+qBdvVYtP7WvMTT+LfjBfuYsXZ4RxuBldsL8wJArGeCl3OZwUg+9bTo8v6kk/nY8memk5HxrCwWDSO24UA==
 
-"@callstack/reassure-logger@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-0.3.0.tgz#7fb1162122a5bd37b8fdb144a424b4e861e5c1bc"
-  integrity sha512-JX5o+8qkIbIRL+cQn9XlQYdv9p/3L6J70zZX6NYi9j0VrSS9PZIRfo8ujMdLSqUNV6HZN1ay59RzuncLjVu0aQ==
+"@callstack/reassure-logger@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-0.3.1.tgz#c09a3acf6fecbfc3ddc3762a6d1d1da8ded4d53a"
+  integrity sha512-IUsNrxVMdt0zgD2IN2snGVGUG8Yc6F3SWaPF8RXUn8qi7XZuYC6WevEL+mIKmlbTTa7qlX9brkn0pJoXAjfcPQ==
   dependencies:
     chalk "4.1.2"
 
-"@callstack/reassure-measure@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-0.4.1.tgz#4701323c92fc4aafd7fd1d84d119cf44a645613b"
-  integrity sha512-E3cClYYtGC3wgMGAnycTR+2kndUJMHrgzrocVgELtHV0DHS1fqoYD3spR15PG3pSgQPr7TYDFsym2ZWoQAJlhw==
+"@callstack/reassure-measure@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-0.5.1.tgz#f453e72ad87793f54502caa220e6ddbd5521b706"
+  integrity sha512-M1tdWKoT2SGQYkITwFWlDiM/yZ+a2cbHSnuu3nEiyFn6YQHpL9FKDIIJjP6nCjHBk4ERj411mpO2Ss927KFu4Q==
   dependencies:
-    "@callstack/reassure-logger" "0.3.0"
+    "@callstack/reassure-logger" "0.3.1"
     mathjs "^11.5.0"
 
 "@eslint/eslintrc@^1.4.1":
@@ -4696,14 +4696,14 @@ read-pkg@^4.0.1:
     parse-json "^4.0.0"
     pify "^3.0.0"
 
-reassure@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.8.0.tgz#117847780bfedd535414b3a250bfa29e717b4e91"
-  integrity sha512-l4ohgcTH2/8uy2bXKOkMeu2JXpsJp15G6nCK2waNRtYN01YFLqXfAzg9binK2NU61v+6Dz0VoA02oJ1B3kfckg==
+reassure@^0.9.0:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.9.1.tgz#356c66e28478dc481ccc5618bf5298c3d8c4f79f"
+  integrity sha512-puPHh4LvDw9FJln58qpkwMDrkiAGO6E+QYe93Znotolefm2kzGytebklxd+z/ULKqL2e8eyDj51RqFOpwY/Ecw==
   dependencies:
-    "@callstack/reassure-cli" "0.8.0"
+    "@callstack/reassure-cli" "0.9.1"
     "@callstack/reassure-danger" "0.1.1"
-    "@callstack/reassure-measure" "0.4.1"
+    "@callstack/reassure-measure" "0.5.1"
 
 regenerate-unicode-properties@^10.1.0:
   version "10.1.0"
@@ -5553,6 +5553,6 @@ yocto-queue@^0.1.0:
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
 zod@^3.20.2:
-  version "3.21.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.21.4.tgz#10882231d992519f0a10b5dd58a38c9dabbb64db"
-  integrity sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
