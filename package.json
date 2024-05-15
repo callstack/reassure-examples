@@ -25,5 +25,5 @@
     "danger": "^11.2.6",
     "reassure": "^1.0.0-beta"
   },
-  "dependencies": {}
+  "packageManager": "yarn@4.2.2"
 }
