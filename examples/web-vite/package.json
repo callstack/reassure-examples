@@ -28,6 +28,6 @@
     "jest-environment-jsdom": "^29.0.3",
     "reassure": "^0.9.0",
     "typescript": "^4.6.4",
-    "vite": "^3.0.0"
+    "vite": "^3.2.10"
   }
 }
