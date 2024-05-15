@@ -1023,23 +1023,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@callstack/reassure-cli@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.8.0.tgz#082ab9acfa39259735aa80cd56c0d4519e60ad98"
-  integrity sha512-qckdbcyDyLJ3AYbGDXg93q4b2szPLfprkhldUS0TLpxz0ZEAyWCplHTVX9q6ipiAc5L0tNOxNufFDz0Fjkwh7A==
+"@callstack/reassure-cli@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.9.1.tgz#331762ee9123560360d61b044055fb9229e4b7d4"
+  integrity sha512-ctETa5REyA1KM50Q9MMdy9oLqMK1eQp3Uc5cmx1VNQrAY678xCqIbiK4Hi3r5kZeq9k+JzsRgs9j+h6yrP8Lyw==
   dependencies:
-    "@callstack/reassure-compare" "0.4.1"
-    "@callstack/reassure-logger" "0.3.0"
+    "@callstack/reassure-compare" "0.5.1"
+    "@callstack/reassure-logger" "0.3.1"
     chalk "4.1.2"
     simple-git "^3.16.0"
     yargs "^17.6.2"
 
-"@callstack/reassure-compare@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-0.4.1.tgz#a6ba806fbe51cea0bc7fdc03e727d91207a21c50"
-  integrity sha512-FJ2QOnloioe73vleC+gmNqpEr3hy8LqNcuibPiJor8BaVIpwNkzV4FhVuolEeNrQ1b5gu5U29anyTsiK6sXCgw==
+"@callstack/reassure-compare@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-0.5.1.tgz#61be2fb1aa53a69d0270cebc3480e605a066f702"
+  integrity sha512-w3/W+1N8pNSdmoT0EZ0fTnhxqeIfkqTrLTrIGQQTgPbaekCSbvojG9eceHQ+XOsZfM3Y9tgDS5Uwx6k9h0JY5g==
   dependencies:
-    "@callstack/reassure-logger" "0.3.0"
+    "@callstack/reassure-logger" "0.3.1"
     markdown-builder "^0.9.0"
     markdown-table "^2.0.0"
     zod "^3.20.2"
@@ -1049,19 +1049,19 @@
   resolved "https://registry.yarnpkg.com/@callstack/reassure-danger/-/reassure-danger-0.1.1.tgz#e3aa581dc8b698c18ecb6eb15d7759fdcba5d8a4"
   integrity sha512-lfza+qBdvVYtP7WvMTT+LfjBfuYsXZ4RxuBldsL8wJArGeCl3OZwUg+9bTo8v6kk/nY8memk5HxrCwWDSO24UA==
 
-"@callstack/reassure-logger@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-0.3.0.tgz#7fb1162122a5bd37b8fdb144a424b4e861e5c1bc"
-  integrity sha512-JX5o+8qkIbIRL+cQn9XlQYdv9p/3L6J70zZX6NYi9j0VrSS9PZIRfo8ujMdLSqUNV6HZN1ay59RzuncLjVu0aQ==
+"@callstack/reassure-logger@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-0.3.1.tgz#c09a3acf6fecbfc3ddc3762a6d1d1da8ded4d53a"
+  integrity sha512-IUsNrxVMdt0zgD2IN2snGVGUG8Yc6F3SWaPF8RXUn8qi7XZuYC6WevEL+mIKmlbTTa7qlX9brkn0pJoXAjfcPQ==
   dependencies:
     chalk "4.1.2"
 
-"@callstack/reassure-measure@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-0.4.1.tgz#4701323c92fc4aafd7fd1d84d119cf44a645613b"
-  integrity sha512-E3cClYYtGC3wgMGAnycTR+2kndUJMHrgzrocVgELtHV0DHS1fqoYD3spR15PG3pSgQPr7TYDFsym2ZWoQAJlhw==
+"@callstack/reassure-measure@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-0.5.1.tgz#f453e72ad87793f54502caa220e6ddbd5521b706"
+  integrity sha512-M1tdWKoT2SGQYkITwFWlDiM/yZ+a2cbHSnuu3nEiyFn6YQHpL9FKDIIJjP6nCjHBk4ERj411mpO2Ss927KFu4Q==
   dependencies:
-    "@callstack/reassure-logger" "0.3.0"
+    "@callstack/reassure-logger" "0.3.1"
     mathjs "^11.5.0"
 
 "@esbuild/android-arm@0.15.18":
@@ -3451,10 +3451,10 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-nanoid@^3.3.6:
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
-  integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
+nanoid@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
+  integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -3699,13 +3699,13 @@ please-upgrade-node@^3.1.1:
     semver-compare "^1.0.0"
 
 postcss@^8.4.18:
-  version "8.4.23"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.23.tgz#df0aee9ac7c5e53e1075c24a3613496f9e6552ab"
-  integrity sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==
+  version "8.4.38"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.38.tgz#b387d533baf2054288e337066d81c6bee9db9e0e"
+  integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
   dependencies:
-    nanoid "^3.3.6"
+    nanoid "^3.3.7"
     picocolors "^1.0.0"
-    source-map-js "^1.0.2"
+    source-map-js "^1.2.0"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -3805,14 +3805,14 @@ read-pkg@^4.0.1:
     parse-json "^4.0.0"
     pify "^3.0.0"
 
-reassure@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.8.0.tgz#117847780bfedd535414b3a250bfa29e717b4e91"
-  integrity sha512-l4ohgcTH2/8uy2bXKOkMeu2JXpsJp15G6nCK2waNRtYN01YFLqXfAzg9binK2NU61v+6Dz0VoA02oJ1B3kfckg==
+reassure@^0.9.0:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.9.1.tgz#356c66e28478dc481ccc5618bf5298c3d8c4f79f"
+  integrity sha512-puPHh4LvDw9FJln58qpkwMDrkiAGO6E+QYe93Znotolefm2kzGytebklxd+z/ULKqL2e8eyDj51RqFOpwY/Ecw==
   dependencies:
-    "@callstack/reassure-cli" "0.8.0"
+    "@callstack/reassure-cli" "0.9.1"
     "@callstack/reassure-danger" "0.1.1"
-    "@callstack/reassure-measure" "0.4.1"
+    "@callstack/reassure-measure" "0.5.1"
 
 regenerate-unicode-properties@^10.1.0:
   version "10.1.0"
@@ -4032,10 +4032,10 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-source-map-js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
-  integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+source-map-js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
+  integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
 
 source-map-support@0.5.13:
   version "0.5.13"
