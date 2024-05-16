@@ -1,6 +1,6 @@
-# Reassure React Native CLI Example
+# Reassure React Native Expo Example
 
-This example showcases Reassure setup for React Native CLI app.
+This example showcases Reassure setup for React Native Expo app.
 
 ## Setup steps
 
