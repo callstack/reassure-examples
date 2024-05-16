@@ -42,7 +42,7 @@ jobs:
         run: cd examples/native && ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: yarn danger ci
+        run: yarn --cwd examples/native danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -79,7 +79,7 @@ jobs:
         run: cd examples/native-expo && ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: yarn danger ci
+        run: yarn --cwd examples/native-expo danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -119,7 +119,7 @@ jobs:
         run: cd examples/web-vite && ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: yarn danger ci
+        run: yarn --cwd examples/web-vite danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -156,6 +156,6 @@ jobs:
         run: cd examples/web-nextjs && ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: yarn danger ci
+        run: yarn --cwd examples/web-nextjs danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
