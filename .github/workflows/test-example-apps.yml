@@ -45,7 +45,7 @@ jobs:
 
   test-native-expo:
     name: Test React Native Expo
-    needs: test-native-expo
+    needs: test-native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -80,7 +80,7 @@ jobs:
 
   test-web-vite:
     name: Test Vite
-    needs: test-native-expo
+    needs: test-native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
