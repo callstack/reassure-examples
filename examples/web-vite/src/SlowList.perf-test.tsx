@@ -10,7 +10,7 @@ test('SlowList', async () => {
   await measureRenders(<AsyncComponent />);
 });
 
-test('AsyncComponent', async () => {
+test('Vite - AsyncComponent', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 

@@ -48,6 +48,7 @@ jobs:
 
   test-web-vite:
     name: Test Vite
+    needs: test-native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
