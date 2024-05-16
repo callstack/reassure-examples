@@ -78,6 +78,11 @@ jobs:
       - name: Run perf tests
         run: cd examples/native-expo && ./reassure-tests.sh
 
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   test-web-vite:
     name: Test Vite
     needs: test-native
@@ -113,6 +118,11 @@ jobs:
       - name: Run perf tests
         run: cd examples/web-vite && ./reassure-tests.sh
 
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   test-web-nextjs:
     name: Test Next.js
     needs: test-native
@@ -144,3 +154,8 @@ jobs:
 
       - name: Run perf tests
         run: cd examples/web-nextjs && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
