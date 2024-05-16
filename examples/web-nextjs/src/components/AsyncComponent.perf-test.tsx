@@ -2,31 +2,15 @@ import * as React from 'react';
 import { fireEvent, screen } from '@testing-library/react';
 import { measureRenders } from 'reassure';
 import { SlowList } from './SlowList';
-
-const AsyncComponent = () => {
-  const [count, setCount] = React.useState(0);
-
-  const handlePress = () => {
-    setTimeout(() => setCount((c) => c + 1), 10);
-  };
-
-  return (
-    <div>
-      <button onClick={handlePress}>Action</button>
-      <span>Count: {count}</span>
-
-      <SlowList count={200} />
-    </div>
-  );
-};
+import { AsyncComponent } from './AsyncComponent';
 
 jest.setTimeout(60_000);
 
-test('SlowList', async () => {
+test('Web Next.js - SlowList', async () => {
   await measureRenders(<AsyncComponent />);
 });
 
-test('AsyncComponent', async () => {
+test('Web Next.js AsyncComponent', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
