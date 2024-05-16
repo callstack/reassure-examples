@@ -32,6 +32,9 @@ jobs:
       - name: Validate TypeScript
         run: yarn --cwd examples/native typecheck
 
+      - name: Validate ESLint
+        run: yarn --cwd examples/native-expo lint
+
       - name: Run tests
         run: yarn --cwd examples/native test
 
@@ -68,9 +71,6 @@ jobs:
 
       - name: Validate TypeScript
         run: yarn --cwd examples/native-expo typecheck
-
-      - name: Validate ESLint
-        run: yarn --cwd examples/native-expo lint
 
       - name: Run tests
         run: yarn --cwd examples/native-expo test
