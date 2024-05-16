@@ -23,9 +23,6 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Install Root
-        run: yarn install
-
       - name: Install Example
         run: yarn --cwd examples/native install
 
@@ -42,13 +39,12 @@ jobs:
         run: cd examples/native && ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: yarn danger ci
+        run: yarn --cwd examples/native danger ci --id native
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   test-native-expo:
     name: Test React Native Expo
-    needs: test-native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -62,9 +58,6 @@ jobs:
         with:
           node-version: 20.x
           cache: 'yarn'
-
-      - name: Install Root
-        run: yarn install
 
       - name: Install Example
         run: yarn --cwd examples/native-expo install
@@ -78,9 +71,13 @@ jobs:
       - name: Run perf tests
         run: cd examples/native-expo && ./reassure-tests.sh
 
+      - name: Run Danger.js
+        run: yarn --cwd examples/native-expo danger ci --id native-expo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   test-web-vite:
     name: Test Vite
-    needs: test-native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -94,9 +91,6 @@ jobs:
         with:
           node-version: 20.x
           cache: 'yarn'
-
-      - name: Install Root
-        run: yarn install
 
       - name: Install Example
         run: yarn --cwd examples/web-vite install
@@ -113,9 +107,13 @@ jobs:
       - name: Run perf tests
         run: cd examples/web-vite && ./reassure-tests.sh
 
+      - name: Run Danger.js
+        run: yarn --cwd examples/web-vite danger ci --id web-vite
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   test-web-nextjs:
     name: Test Next.js
-    needs: test-native
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -130,9 +128,6 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Install Root
-        run: yarn install
-
       - name: Install Example
         run: yarn --cwd examples/web-nextjs install
 
@@ -144,3 +139,8 @@ jobs:
 
       - name: Run perf tests
         run: cd examples/web-nextjs && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn --cwd examples/web-nextjs danger ci --id web-nextjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
