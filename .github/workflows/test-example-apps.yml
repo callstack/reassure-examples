@@ -33,7 +33,7 @@ jobs:
         run: yarn --cwd examples/native typecheck
 
       - name: Validate ESLint
-        run: yarn --cwd examples/native-expo lint
+        run: yarn --cwd examples/native lint
 
       - name: Run tests
         run: yarn --cwd examples/native test
