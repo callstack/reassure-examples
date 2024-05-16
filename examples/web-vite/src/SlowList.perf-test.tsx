@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { fireEvent, screen } from '@testing-library/react';
-import { measurePerformance } from 'reassure';
+import { measureRenders } from 'reassure';
 import { SlowList } from './SlowList';
 
-const AsyncComponent = () => {
+function AsyncComponent() {
   const [count, setCount] = React.useState(0);
 
   const handlePress = () => {
@@ -18,12 +18,12 @@ const AsyncComponent = () => {
       <SlowList count={200} />
     </div>
   );
-};
+}
 
 jest.setTimeout(60_000);
 
 test('SlowList', async () => {
-  await measurePerformance(<AsyncComponent />);
+  await measureRenders(<AsyncComponent />);
 });
 
 test('AsyncComponent', async () => {
@@ -42,5 +42,5 @@ test('AsyncComponent', async () => {
     await screen.findByText('Count: 5');
   };
 
-  await measurePerformance(<AsyncComponent />, { scenario });
+  await measureRenders(<AsyncComponent />, { scenario });
 });

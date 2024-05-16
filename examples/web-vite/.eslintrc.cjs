@@ -1,11 +1,18 @@
 module.exports = {
   root: true,
-  extends: '@callstack/eslint-config/react',
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react-refresh'],
   rules: {
-    // typescript will handle that
-    'import/no-extraneous-dependencies': 'off',
-    'import/no-unresolved': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'jest/expect-expect': ['error', { assertFunctionNames: ['expect', 'measurePerformance'] }],
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
   },
-};
+}
