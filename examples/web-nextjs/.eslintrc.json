@@ -1,3 +1,4 @@
 {
-  "extends": "@callstack/eslint-config/react"
+  "root": true,
+  "extends": "next/core-web-vitals"
 }
