@@ -23,9 +23,6 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Install Root
-        run: yarn install
-
       - name: Install Example
         run: yarn --cwd examples/native install
 
@@ -62,9 +59,6 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Install Root
-        run: yarn install
-
       - name: Install Example
         run: yarn --cwd examples/native-expo install
 
@@ -97,9 +91,6 @@ jobs:
         with:
           node-version: 20.x
           cache: 'yarn'
-
-      - name: Install Root
-        run: yarn install
 
       - name: Install Example
         run: yarn --cwd examples/web-vite install
@@ -136,9 +127,6 @@ jobs:
         with:
           node-version: 20.x
           cache: 'yarn'
-
-      - name: Install Root
-        run: yarn install
 
       - name: Install Example
         run: yarn --cwd examples/web-nextjs install
