@@ -27,7 +27,7 @@ const AsyncComponent = () => {
 };
 
 jest.setTimeout(600_000);
-test('Other Component 10', async () => {
+test('RN CLI - Other Component 10', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
@@ -39,7 +39,7 @@ test('Other Component 10', async () => {
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
 });
 
-test('Other Component 10 legacy scenario', async () => {
+test('RN CLI - Other Component 10 legacy scenario', async () => {
   const scenario = async (legacyScreen: RenderAPI) => {
     const button = legacyScreen.getByText('Action');
 
@@ -51,7 +51,7 @@ test('Other Component 10 legacy scenario', async () => {
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
 });
 
-test('Other Component 20', async () => {
+test('RN CLI - Other Component 20', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 

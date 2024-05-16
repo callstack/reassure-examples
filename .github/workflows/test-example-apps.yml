@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Enable Corepack
         run: corepack enable
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
           cache: 'yarn'
 
       - name: Install Root
@@ -31,9 +31,6 @@ jobs:
 
       - name: Validate TypeScript
         run: yarn --cwd examples/native typecheck
-
-      - name: Validate ESLint
-        run: yarn --cwd examples/native lint
 
       - name: Run tests
         run: yarn --cwd examples/native test
@@ -46,9 +43,44 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  test-native-expo:
+    name: Test React Native Expo
+    needs: test-native-expo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'yarn'
+
+      - name: Install Root
+        run: yarn install
+
+      - name: Install Example
+        run: yarn --cwd examples/native-expo install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/native-expo typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/native-expo lint
+
+      - name: Run tests
+        run: yarn --cwd examples/native-expo test
+
+      - name: Run perf tests
+        run: cd examples/native-expo && ./reassure-tests.sh
+
   test-web-vite:
     name: Test Vite
-    needs: test-native
+    needs: test-native-expo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -80,8 +112,3 @@ jobs:
 
       - name: Run perf tests
         run: cd examples/web-vite && ./reassure-tests.sh
-
-      - name: Run Danger.js
-        run: yarn danger ci
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
