@@ -6,7 +6,7 @@ import { AsyncComponent } from './AsyncComponent';
 
 jest.setTimeout(600_000);
 
-test('RN Expo - AsyncComponent 10 runs', async () => {
+test('RN CLI - AsyncComponent 10 runs', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
@@ -18,7 +18,7 @@ test('RN Expo - AsyncComponent 10 runs', async () => {
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
 });
 
-test('RN Expo - AsyncComponent 50 run', async () => {
+test('RN CLI - AsyncComponent 50 run', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
