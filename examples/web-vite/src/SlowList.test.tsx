@@ -1,3 +1,4 @@
+// @ts-expect-error Needed for Jest testing
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 import { SlowList } from './SlowList';
