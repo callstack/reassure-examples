@@ -24,22 +24,22 @@ jobs:
           cache: 'yarn'
 
       - name: Install Example
-        run: yarn --cwd examples/native install
+        run: yarn --cwd examples/native-cli install
 
       - name: Validate TypeScript
-        run: yarn --cwd examples/native typecheck
+        run: yarn --cwd examples/native-cli typecheck
 
       - name: Validate ESLint
-        run: yarn --cwd examples/native lint
+        run: yarn --cwd examples/native-cli lint
 
       - name: Run tests
-        run: yarn --cwd examples/native test
+        run: yarn --cwd examples/native-cli test
 
       - name: Run perf tests
-        run: cd examples/native && ./reassure-tests.sh
+        run: cd examples/native-cli && ./reassure-tests.sh
 
       - name: Run Danger.js
-        run: yarn --cwd examples/native danger ci --id native
+        run: yarn --cwd examples/native-cli danger ci --id native
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
