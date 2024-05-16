@@ -1,24 +1,6 @@
-import * as React from 'react';
 import { fireEvent, screen } from '@testing-library/react';
 import { measureRenders } from 'reassure';
-import { SlowList } from './SlowList';
-
-function AsyncComponent() {
-  const [count, setCount] = React.useState(0);
-
-  const handlePress = () => {
-    setTimeout(() => setCount((c) => c + 1), 10);
-  };
-
-  return (
-    <div>
-      <button onClick={handlePress}>Action</button>
-      <span>Count: {count}</span>
-
-      <SlowList count={200} />
-    </div>
-  );
-}
+import { AsyncComponent } from './AsyncComponent';
 
 jest.setTimeout(60_000);
 
