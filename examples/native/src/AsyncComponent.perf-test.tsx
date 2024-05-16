@@ -18,7 +18,7 @@ test('RN CLI - AsyncComponent 10 runs', async () => {
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
 });
 
-test('RN CLI - AsyncComponent 50 run', async () => {
+test('RN CLI - AsyncComponent 50 runs', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
