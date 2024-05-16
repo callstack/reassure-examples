@@ -5802,6 +5802,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"reassure-web-vite@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "reassure-web-vite@workspace:."
+  dependencies:
+    "@babel/preset-env": "npm:^7.24.5"
+    "@babel/preset-react": "npm:^7.24.1"
+    "@babel/preset-typescript": "npm:^7.24.1"
+    "@testing-library/react": "npm:^15.0.7"
+    "@types/babel__preset-env": "npm:^7"
+    "@types/jest": "npm:^29.5.12"
+    "@types/react": "npm:^18.2.66"
+    "@types/react-dom": "npm:^18.2.22"
+    "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
+    "@typescript-eslint/parser": "npm:^7.2.0"
+    "@vitejs/plugin-react": "npm:^4.2.1"
+    eslint: "npm:^8.57.0"
+    eslint-plugin-react-hooks: "npm:^4.6.0"
+    eslint-plugin-react-refresh: "npm:^0.4.6"
+    jest: "npm:^29.7.0"
+    jest-environment-jsdom: "npm:^29.7.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    reassure: "npm:^1.0.0-rc.4"
+    typescript: "npm:^5.2.2"
+    vite: "npm:^5.2.0"
+  languageName: unknown
+  linkType: soft
+
 "reassure@npm:^1.0.0-rc.4":
   version: 1.0.0-rc.4
   resolution: "reassure@npm:1.0.0-rc.4"
@@ -6669,34 +6697,6 @@ __metadata:
   checksum: 10c0/a17e037bccd3ca8a25a80cb850903facdfed0de4864bd8728f1782370715d679fa72e0a0f5da7c1c1379365159901e5935f35be531229da53bbfc0efdabdb48e
   languageName: node
   linkType: hard
-
-"web-vite@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "web-vite@workspace:."
-  dependencies:
-    "@babel/preset-env": "npm:^7.24.5"
-    "@babel/preset-react": "npm:^7.24.1"
-    "@babel/preset-typescript": "npm:^7.24.1"
-    "@testing-library/react": "npm:^15.0.7"
-    "@types/babel__preset-env": "npm:^7"
-    "@types/jest": "npm:^29.5.12"
-    "@types/react": "npm:^18.2.66"
-    "@types/react-dom": "npm:^18.2.22"
-    "@typescript-eslint/eslint-plugin": "npm:^7.2.0"
-    "@typescript-eslint/parser": "npm:^7.2.0"
-    "@vitejs/plugin-react": "npm:^4.2.1"
-    eslint: "npm:^8.57.0"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-react-refresh: "npm:^0.4.6"
-    jest: "npm:^29.7.0"
-    jest-environment-jsdom: "npm:^29.7.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    reassure: "npm:^1.0.0-rc.4"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^5.2.0"
-  languageName: unknown
-  linkType: soft
 
 "webidl-conversions@npm:^7.0.0":
   version: 7.0.0

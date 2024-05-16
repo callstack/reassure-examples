@@ -1,4 +1,4 @@
-name: Main
+name: Examples
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   test-native:
-    name: Test React Native CLI Example
+    name: Test React Native CLI
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,6 +40,45 @@ jobs:
 
       - name: Run perf tests
         run: cd examples/native && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-web-vite:
+    name: Test Vite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'yarn'
+
+      - name: Install Root
+        run: yarn install
+
+      - name: Install Example
+        run: yarn --cwd examples/web-vite install
+
+      - name: Validate TypeScript
+        run: yarn --cwd examples/web-vite typecheck
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/web-vite lint
+
+      - name: Run tests
+        run: yarn --cwd examples/web-vite test
+
+      - name: Run perf tests
+        run: cd examples/web-vite && ./reassure-tests.sh
 
       - name: Run Danger.js
         run: yarn danger ci
