@@ -4109,7 +4109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"danger@npm:^12.2.0":
+"danger@npm:^12.3.3":
   version: 12.3.3
   resolution: "danger@npm:12.3.3"
   dependencies:
@@ -7942,7 +7942,7 @@ __metadata:
     "@testing-library/react-native": "npm:^12.8.1"
     "@types/jest": "npm:^29.5.12"
     "@types/react": "npm:~18.2.79"
-    danger: "npm:^12.2.0"
+    danger: "npm:^12.3.3"
     expo: "npm:^51.0.38"
     expo-status-bar: "npm:~1.12.1"
     jest: "npm:^29.7.0"
