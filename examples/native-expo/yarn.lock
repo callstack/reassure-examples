@@ -1082,12 +1082,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.20.0, @babel/runtime@npm:^7.24.4":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.20.0":
   version: 7.25.0
   resolution: "@babel/runtime@npm:7.25.0"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
   checksum: 10c0/bd3faf246170826cef2071a94d7b47b49d532351360ecd17722d03f6713fd93a3eb3dbd9518faa778d5e8ccad7392a7a604e56bd37aaad3f3aa68d619ccd983d
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.25.7":
+  version: 7.26.7
+  resolution: "@babel/runtime@npm:7.26.7"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/60199c049f90e5e41c687687430052a370aca60bac7859ff4ee761c5c1739b8ba1604d391d01588c22dc0e93828cbadb8ada742578ad1b1df240746bce98729a
   languageName: node
   linkType: hard
 
@@ -1135,59 +1144,59 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/reassure-cli@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@callstack/reassure-cli@npm:1.2.0"
+"@callstack/reassure-cli@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@callstack/reassure-cli@npm:1.3.1"
   dependencies:
-    "@callstack/reassure-compare": "npm:1.2.0"
-    "@callstack/reassure-logger": "npm:1.2.0"
+    "@callstack/reassure-compare": "npm:1.3.1"
+    "@callstack/reassure-logger": "npm:1.3.1"
     chalk: "npm:4.1.2"
-    simple-git: "npm:^3.25.0"
+    simple-git: "npm:^3.26.0"
     yargs: "npm:^17.7.2"
   bin:
     reassure: lib/commonjs/bin.js
-  checksum: 10c0/d78af9a479c0e2bc4e99caa640baae5786988610bd5d1c535119b7ea8aa253a3911ee8876b8fe9b0752ade7a25a203d96ad027784191dc6a745eb9b0631e968e
+  checksum: 10c0/19ea989d9c3aacd71bd4c6f75d6b9bb32068d2909de26405b02fa324f88073282549a6cabe560d257f38cf3851f326b255112c54fb3a1facaee0f187dec457a1
   languageName: node
   linkType: hard
 
-"@callstack/reassure-compare@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@callstack/reassure-compare@npm:1.2.0"
+"@callstack/reassure-compare@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@callstack/reassure-compare@npm:1.3.1"
   dependencies:
-    "@callstack/reassure-logger": "npm:1.2.0"
-    markdown-table: "npm:^2.0.0"
-    ts-regex-builder: "npm:^1.7.1"
+    "@callstack/reassure-logger": "npm:1.3.1"
+    ts-markdown-builder: "npm:0.4.0"
+    ts-regex-builder: "npm:^1.8.2"
     zod: "npm:^3.23.8"
-  checksum: 10c0/cf5e0b1d11d2bc68c73448e210a608aec7af05cb74a89b8540b41a81420b31d931e15bd3fd5d7b79520e432a32f87267658eeae21ceb2385a704969507cd45c6
+  checksum: 10c0/71b59a1d3c8ab247c8fd892069cff843c6e686715b9129c9264dd13c0c3d34493bd914d5367889f750ea5d68a9a2db63aff1f0c11b47bd77cc4d05e49119f4f9
   languageName: node
   linkType: hard
 
-"@callstack/reassure-danger@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@callstack/reassure-danger@npm:1.2.0"
-  checksum: 10c0/f0e5ef8927bcbc05183a4284a6bac8fb9efdc1e619b4f5285bc21b90a944b1d2ff0fdaaca490ffff215ca3278f4e45117b500d101a226fec72b7aaa383cfce4f
+"@callstack/reassure-danger@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@callstack/reassure-danger@npm:1.3.1"
+  checksum: 10c0/d885398c68ee9efadd06626e98fb8b790ee7e61d527bbe74fd466363b00ce02641e103595fb9fc9d4518f556fab8b979710850680af67485284b5e7c07a9910f
   languageName: node
   linkType: hard
 
-"@callstack/reassure-logger@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@callstack/reassure-logger@npm:1.2.0"
+"@callstack/reassure-logger@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@callstack/reassure-logger@npm:1.3.1"
   dependencies:
     chalk: "npm:4.1.2"
-  checksum: 10c0/123e118dcb02543c90463453a3772f222fd820f9f19cd648062c929d8c2686b21cdcd545170f7d87724f1c6059a66c9b459b1bdf24267ada99ffab1801299d55
+  checksum: 10c0/ebeded19125f006bb58832a948b425fc2c4eb4abb8c5ea8654e33bcd19ed7dbbbd7de6d98083079255cbea96059295bcf41c5a80128b6f13502655e3748466f3
   languageName: node
   linkType: hard
 
-"@callstack/reassure-measure@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@callstack/reassure-measure@npm:1.2.0"
+"@callstack/reassure-measure@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@callstack/reassure-measure@npm:1.3.1"
   dependencies:
-    "@callstack/reassure-logger": "npm:1.2.0"
-    mathjs: "npm:^12.4.3"
+    "@callstack/reassure-logger": "npm:1.3.1"
+    mathjs: "npm:^13.1.1"
     pretty-format: "npm:^29.7.0"
   peerDependencies:
     react: ">=18.0.0"
-  checksum: 10c0/fdf5cf7706db4d7b072fa82f57e84e8c286b94274592242014fc7066186b9f2552d5994fa5a206d8f5925d9c35390d4b5a1dc260a1f7979d16dd49e2527202b2
+  checksum: 10c0/0725c30123436f0ca9404c48c7bd0488b42a2ab61da93d0372cb24d52285759017769048ffd9205639faef9cfa2b53b29d53e0d1123f14f3d89660c5732e3560
   languageName: node
   linkType: hard
 
@@ -2636,22 +2645,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-native@npm:^12.5.2":
-  version: 12.5.2
-  resolution: "@testing-library/react-native@npm:12.5.2"
+"@testing-library/react-native@npm:^13.0.1":
+  version: 13.0.1
+  resolution: "@testing-library/react-native@npm:13.0.1"
   dependencies:
+    chalk: "npm:^4.1.2"
     jest-matcher-utils: "npm:^29.7.0"
     pretty-format: "npm:^29.7.0"
     redent: "npm:^3.0.0"
   peerDependencies:
-    jest: ">=28.0.0"
-    react: ">=16.8.0"
-    react-native: ">=0.59"
-    react-test-renderer: ">=16.8.0"
+    jest: ">=29.0.0"
+    react: ">=18.2.0"
+    react-native: ">=0.71"
+    react-test-renderer: ">=18.2.0"
   peerDependenciesMeta:
     jest:
       optional: true
-  checksum: 10c0/471035e8418cad15e09de38e90ae531550209acc9bbee9bd4386c43029abd832bd3c46eb243463143117cc0489b9e1abab7805f197a17f0de807e6f9f27f7b6f
+  checksum: 10c0/c73848832bc1b724ac6ef188f0e4bf77ec1cb0589a5245d449bed3e384048ced818a27340635eabeb6cb5f323225b8d37fca6377925b4be28923a9a23779296f
   languageName: node
   linkType: hard
 
@@ -3866,10 +3876,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"complex.js@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "complex.js@npm:2.1.1"
-  checksum: 10c0/c5dbb83954b472cf7fb1aebf8d140a7eb85a00b73eeb2b4ee4d192f98f038f3800f54550747b85be1114fedcbefebb2ade709b17b3cd40ab2bd546cb8fe9121c
+"complex.js@npm:^2.2.5":
+  version: 2.4.2
+  resolution: "complex.js@npm:2.4.2"
+  checksum: 10c0/c78cca0a3c08fa48845e2703b9772bdd80d44e56728382d43879183cb23391da6e8b6326ceec23c685abfd529b61d34842ba1784d7fa3783b194fbc6d0850d7c
   languageName: node
   linkType: hard
 
@@ -5084,10 +5094,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fraction.js@npm:4.3.4":
-  version: 4.3.4
-  resolution: "fraction.js@npm:4.3.4"
-  checksum: 10c0/095f60a914637b996ee1a4758edd529bee7379aecd528d3cf641402ec1225c3146ec2b4a8575d58aa48600c5ee79dcc9e7dd799076acff4cfdeed8e73541cdf1
+"fraction.js@npm:^4.3.7":
+  version: 4.3.7
+  resolution: "fraction.js@npm:4.3.7"
+  checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
   languageName: node
   linkType: hard
 
@@ -7302,15 +7312,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-table@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "markdown-table@npm:2.0.0"
-  dependencies:
-    repeat-string: "npm:^1.0.0"
-  checksum: 10c0/f257e0781ea50eb946919df84bdee4ba61f983971b277a369ca7276f89740fd0e2749b9b187163a42df4c48682b71962d4007215ce3523480028f06c11ddc2e6
-  languageName: node
-  linkType: hard
-
 "marky@npm:^1.2.2":
   version: 1.2.5
   resolution: "marky@npm:1.2.5"
@@ -7318,22 +7319,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mathjs@npm:^12.4.3":
-  version: 12.4.3
-  resolution: "mathjs@npm:12.4.3"
+"mathjs@npm:^13.1.1":
+  version: 13.2.3
+  resolution: "mathjs@npm:13.2.3"
   dependencies:
-    "@babel/runtime": "npm:^7.24.4"
-    complex.js: "npm:^2.1.1"
+    "@babel/runtime": "npm:^7.25.7"
+    complex.js: "npm:^2.2.5"
     decimal.js: "npm:^10.4.3"
     escape-latex: "npm:^1.2.0"
-    fraction.js: "npm:4.3.4"
+    fraction.js: "npm:^4.3.7"
     javascript-natural-sort: "npm:^0.7.1"
     seedrandom: "npm:^3.0.5"
     tiny-emitter: "npm:^2.1.0"
-    typed-function: "npm:^4.1.1"
+    typed-function: "npm:^4.2.1"
   bin:
     mathjs: bin/cli.js
-  checksum: 10c0/b5b7c64b851a92729a9374f068b73e7d771a47be83caadb1e6b22235fbf5d75661e0a0891242a2b5c7e79b8b652b119d32860b87dfec895049d238e748436738
+  checksum: 10c0/a8c160931e926a65e59b983f285672ce3797682d703074670e39c11b36a15ceec01e2044de1ef5929227695da21ed2e401ef715c333d564eebff4aaa5c9c48cf
   languageName: node
   linkType: hard
 
@@ -7890,7 +7891,7 @@ __metadata:
   resolution: "native-expo@workspace:."
   dependencies:
     "@babel/core": "npm:^7.24.0"
-    "@testing-library/react-native": "npm:^12.5.2"
+    "@testing-library/react-native": "npm:^13.0.1"
     "@types/jest": "npm:^29.5.12"
     "@types/react": "npm:~18.2.79"
     danger: "npm:^12.2.0"
@@ -7899,8 +7900,8 @@ __metadata:
     jest: "npm:^29.7.0"
     react: "npm:18.2.0"
     react-native: "npm:0.74.5"
-    react-test-renderer: "npm:^18.2.0"
-    reassure: "npm:^1.2.0"
+    react-test-renderer: "npm:18.2.0"
+    reassure: "npm:^1.3.1"
     typescript: "npm:~5.3.3"
   languageName: unknown
   linkType: soft
@@ -8809,7 +8810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^18.0.0, react-is@npm:^18.3.1":
+"react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^18.0.0, react-is@npm:^18.2.0":
   version: 18.3.1
   resolution: "react-is@npm:18.3.1"
   checksum: 10c0/f2f1e60010c683479e74c63f96b09fb41603527cd131a9959e2aee1e5a8b0caf270b365e5ca77d4a6b18aae659b60a86150bb3979073528877029b35aecd2072
@@ -8902,16 +8903,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:^18.2.0":
-  version: 18.3.1
-  resolution: "react-test-renderer@npm:18.3.1"
+"react-test-renderer@npm:18.2.0":
+  version: 18.2.0
+  resolution: "react-test-renderer@npm:18.2.0"
   dependencies:
-    react-is: "npm:^18.3.1"
+    react-is: "npm:^18.2.0"
     react-shallow-renderer: "npm:^16.15.0"
-    scheduler: "npm:^0.23.2"
+    scheduler: "npm:^0.23.0"
   peerDependencies:
-    react: ^18.3.1
-  checksum: 10c0/c633558ef9af33bc68f0c4dbb5163a004c4fb9eade7bd0a7cfc0355fb367f36bd9d96533c90b7e85a146be6c525113a15f58683d269e0177ad77e2b04d4fe51c
+    react: ^18.2.0
+  checksum: 10c0/53dfada1da1e8dd0498a5601e9eea3dc6ca23c6c2694d1cab9712faea869c11e4ce1c9a618d674cb668a668b41fb6bcf9a7b0a078cd853b1922f002fa22f42c8
   languageName: node
   linkType: hard
 
@@ -8964,18 +8965,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reassure@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "reassure@npm:1.2.0"
+"reassure@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "reassure@npm:1.3.1"
   dependencies:
-    "@callstack/reassure-cli": "npm:1.2.0"
-    "@callstack/reassure-compare": "npm:1.2.0"
-    "@callstack/reassure-danger": "npm:1.2.0"
-    "@callstack/reassure-measure": "npm:1.2.0"
+    "@callstack/reassure-cli": "npm:1.3.1"
+    "@callstack/reassure-compare": "npm:1.3.1"
+    "@callstack/reassure-danger": "npm:1.3.1"
+    "@callstack/reassure-measure": "npm:1.3.1"
     import-local: "npm:^3.2.0"
   bin:
     reassure: lib/commonjs/bin/reassure.js
-  checksum: 10c0/017fcb26d4c5038505b3ac0fac816bad24355b259db10e7fc739b5383335dc723aac677443cc4031bb22d492b20ed649752c6da674c5927cc12ffd0ce818c3ee
+  checksum: 10c0/017e829cb2be2246f2b39873fe96cae112d91ccc4789ca4e8287c8454dacc58b1a2efda25455fe074e94cfc96b61656089db7bd2236238d1f5376648a48db56b
   languageName: node
   linkType: hard
 
@@ -9072,13 +9073,6 @@ __metadata:
   version: 0.1.1
   resolution: "remove-trailing-slash@npm:0.1.1"
   checksum: 10c0/6fa91e7b89e0675fdca6ce54af5fad9bd612d51e2251913a2e113b521b157647f1f8c694b55447780b489b30a63ebe949ccda7411ef383d09136bb27121c6c09
-  languageName: node
-  linkType: hard
-
-"repeat-string@npm:^1.0.0":
-  version: 1.6.1
-  resolution: "repeat-string@npm:1.6.1"
-  checksum: 10c0/87fa21bfdb2fbdedc44b9a5b118b7c1239bdd2c2c1e42742ef9119b7d412a5137a1d23f1a83dc6bb686f4f27429ac6f542e3d923090b44181bafa41e8ac0174d
   languageName: node
   linkType: hard
 
@@ -9342,7 +9336,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.23.2":
+"scheduler@npm:^0.23.0":
   version: 0.23.2
   resolution: "scheduler@npm:0.23.2"
   dependencies:
@@ -9556,14 +9550,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git@npm:^3.25.0":
-  version: 3.25.0
-  resolution: "simple-git@npm:3.25.0"
+"simple-git@npm:^3.26.0":
+  version: 3.27.0
+  resolution: "simple-git@npm:3.27.0"
   dependencies:
     "@kwsites/file-exists": "npm:^1.1.1"
     "@kwsites/promise-deferred": "npm:^1.1.1"
     debug: "npm:^4.3.5"
-  checksum: 10c0/2087dddac041eac6330cbb7fafea21f3e45786ea54e50ae07a49ba6a7134298e12727e5e4b6580310b679c7cb4f2a83804c04e7eab247eeabcd48d33b7885e16
+  checksum: 10c0/ef56cabea585377d3e0ca30e4e93447f465d91f23eaf751693cc31f366b5f7636facf52ad5bcd598bfdf295fa60732e7a394303d378995b52e2d221d92e5f9f4
   languageName: node
   linkType: hard
 
@@ -10242,10 +10236,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-regex-builder@npm:^1.7.1":
-  version: 1.7.1
-  resolution: "ts-regex-builder@npm:1.7.1"
-  checksum: 10c0/c128e470d0f508064fa278b322edd1cc520ad869caf578cfb7ecde72a7175d77a1d43e1559a95f1d49ee2b0b3efb9521731352ab380991d204750b5e9ca05a4a
+"ts-markdown-builder@npm:0.4.0":
+  version: 0.4.0
+  resolution: "ts-markdown-builder@npm:0.4.0"
+  checksum: 10c0/6814c9ae5435637a13a5562bea3aed6894e746fbd8e39eb15e2a469247e7c2e8e2f08db86af39a4fdc7e4906441b75758a30f1b0aae1914c230bea124b1a5814
+  languageName: node
+  linkType: hard
+
+"ts-regex-builder@npm:^1.8.2":
+  version: 1.8.2
+  resolution: "ts-regex-builder@npm:1.8.2"
+  checksum: 10c0/d839e30dff6b373e578cce752c4f6c590f060379a1222148ad7813fa64394eba1fc53e86da3bdd53afdf695ba77fb8f51a8568f1bef99ef6a19f9f14d332e7c1
   languageName: node
   linkType: hard
 
@@ -10343,7 +10344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typed-function@npm:^4.1.1":
+"typed-function@npm:^4.2.1":
   version: 4.2.1
   resolution: "typed-function@npm:4.2.1"
   checksum: 10c0/0b4e9a359e456f7df50f3d7cc53e2408d23a516f27b50c2c0654f388110ecf407c0595b1bf2296d3d8667fae6aae311ec2af90c602385777d12fe724bae99156
