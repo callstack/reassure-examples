@@ -1,9 +1,10 @@
+import * as React from 'react';
 import { render, screen } from '@testing-library/react-native';
 import { expect, test } from '@jest/globals';
-import { SlowList } from './SlowList';
+import { TestList } from './TestList';
 
-test('SlowList', () => {
-  render(<SlowList count={10} />);
+test('TestList', () => {
+  render(<TestList count={10} />);
 
   const items = screen.getAllByText(/Item/i);
   expect(items).toHaveLength(10);

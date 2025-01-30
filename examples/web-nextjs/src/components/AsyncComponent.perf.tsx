@@ -1,4 +1,3 @@
-// @ts-expect-error Needed for Jest testing
 import * as React from 'react';
 import { fireEvent, screen } from '@testing-library/react';
 import { measureRenders } from 'reassure';
@@ -6,7 +5,7 @@ import { AsyncComponent } from './AsyncComponent';
 
 jest.setTimeout(60_000);
 
-test('Web Next.js - AsyncComponent 10 runs', async () => {
+test('Web Next.js - AsyncComponent (10 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
@@ -25,7 +24,7 @@ test('Web Next.js - AsyncComponent 10 runs', async () => {
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
 });
 
-test('Web Next.js - AsyncComponent 50 runs', async () => {
+test('Web Next.js - AsyncComponent (50 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 

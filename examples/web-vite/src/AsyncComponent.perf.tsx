@@ -6,7 +6,7 @@ import { AsyncComponent } from './AsyncComponent';
 
 jest.setTimeout(60_000);
 
-test('Web Vite - AsyncComponent 10 runs', async () => {
+test('Web Vite - AsyncComponent (10 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
@@ -25,7 +25,7 @@ test('Web Vite - AsyncComponent 10 runs', async () => {
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
 });
 
-test('Web Vite - AsyncComponent 50 runs', async () => {
+test('Web Vite - AsyncComponent (50 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SlowList } from './SlowList';
+import { TestList } from './TestList';
 
 export function AsyncComponent() {
   const [count, setCount] = React.useState(0);
@@ -13,7 +13,7 @@ export function AsyncComponent() {
       <button onClick={handlePress}>Action</button>
       <span>Count: {count}</span>
 
-      <SlowList count={200} />
+      <TestList count={200} />
     </div>
   );
 }
