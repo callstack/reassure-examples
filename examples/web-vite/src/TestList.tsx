@@ -1,3 +1,4 @@
+// @ts-expect-error - Required by Jest tests
 import * as React from 'react';
 
 interface TestListProps {
