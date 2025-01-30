@@ -1,0 +1,47 @@
+name: Web - Next.js
+
+on:
+  push:
+    branches: [main]
+    paths: ['examples/web-nextjs/**']
+  pull_request:
+    branches: ['**']
+    paths: ['examples/web-nextjs/**']
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !contains(github.ref, 'main')}}
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'yarn'
+
+      - name: Install Example
+        run: yarn --cwd examples/web-nextjs install
+
+      - name: Validate ESLint
+        run: yarn --cwd examples/web-nextjs lint
+
+      - name: Run tests
+        run: yarn --cwd examples/web-nextjs test
+
+      - name: Run perf tests
+        run: cd examples/web-nextjs && ./reassure-tests.sh
+
+      - name: Run Danger.js
+        run: yarn --cwd examples/web-nextjs danger ci --id web-nextjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

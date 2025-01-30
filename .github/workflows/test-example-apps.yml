@@ -3,8 +3,14 @@ name: Examples
 on:
   push:
     branches: [main]
+    paths: ['examples/xxx/**']
   pull_request:
     branches: ['**']
+    paths: ['examples/xxx/**']
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !contains(github.ref, 'main')}}
 
 jobs:
   test-native:
