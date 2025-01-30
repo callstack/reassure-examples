@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { View, Text, Pressable } from 'react-native';
-import { SlowList } from './SlowList';
+import { TestList } from './TestList';
 
 export function AsyncComponent() {
   const [count, setCount] = React.useState(0);
 
   const handlePress = () => {
-    setTimeout(() => setCount(c => c + 1), 10);
+    setTimeout(() => setCount((c) => c + 1), 10);
   };
 
   return (
@@ -17,7 +17,7 @@ export function AsyncComponent() {
 
       <Text>Count: {count}</Text>
 
-      <SlowList count={200} />
+      <TestList count={200} />
     </View>
   );
 }
