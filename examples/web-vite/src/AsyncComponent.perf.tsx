@@ -1,5 +1,3 @@
-// @ts-expect-error Needed for Jest testing
-import * as React from 'react';
 import { fireEvent, screen } from '@testing-library/react';
 import { measureRenders } from 'reassure';
 import { AsyncComponent } from './AsyncComponent';
