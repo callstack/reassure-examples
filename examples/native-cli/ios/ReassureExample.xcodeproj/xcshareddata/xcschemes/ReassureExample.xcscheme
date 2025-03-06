@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ReassureNativeExample.app"
-               BlueprintName = "ReassureNativeExample"
-               ReferencedContainer = "container:ReassureNativeExample.xcodeproj">
+               BuildableName = "ReassureExample.app"
+               BlueprintName = "ReassureExample"
+               ReferencedContainer = "container:ReassureExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ReassureNativeExampleTests.xctest"
-               BlueprintName = "ReassureNativeExampleTests"
-               ReferencedContainer = "container:ReassureNativeExample.xcodeproj">
+               BuildableName = "ReassureExampleTests.xctest"
+               BlueprintName = "ReassureExampleTests"
+               ReferencedContainer = "container:ReassureExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReassureNativeExample.app"
-            BlueprintName = "ReassureNativeExample"
-            ReferencedContainer = "container:ReassureNativeExample.xcodeproj">
+            BuildableName = "ReassureExample.app"
+            BlueprintName = "ReassureExample"
+            ReferencedContainer = "container:ReassureExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReassureNativeExample.app"
-            BlueprintName = "ReassureNativeExample"
-            ReferencedContainer = "container:ReassureNativeExample.xcodeproj">
+            BuildableName = "ReassureExample.app"
+            BlueprintName = "ReassureExample"
+            ReferencedContainer = "container:ReassureExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
