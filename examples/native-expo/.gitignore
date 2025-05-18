@@ -7,8 +7,10 @@ node_modules/
 .expo/
 dist/
 web-build/
+expo-env.d.ts
 
 # Native
+.kotlin/
 *.orig.*
 *.jks
 *.p8
@@ -33,21 +35,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
-
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
-**/*/.yarn
-!**/*/.yarn/patches
-!**/*/.yarn/plugins
-!**/*/.yarn/releases
-!**/*/.yarn/sdks
-!**/*/.yarn/versions
 
 # Reassure
 .reassure/
