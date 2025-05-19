@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import {View, Text} from 'react-native';
 
 interface TestListProps {
   count: number;
 }
 
-export const TestList = ({ count }: TestListProps) => {
-  const data = Array.from({ length: count }, (_, index) => index);
+export const TestList = ({count}: TestListProps) => {
+  const data = Array.from({length: count}, (_, index) => index);
 
   return (
     <View>
@@ -21,7 +21,7 @@ interface ListItemProps {
   title: string;
 }
 
-const ListItem = ({ title }: ListItemProps) => {
+const ListItem = ({title}: ListItemProps) => {
   // Uncomment to introduce a performance issue
   // const [, forceRender] = React.useState<{}>();
   // React.useEffect(() => {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { jest, test } from '@jest/globals';
-import { fireEvent, screen } from '@testing-library/react-native';
-import { measureRenders } from 'reassure';
-import { AsyncComponent } from './AsyncComponent';
+import {jest, test} from '@jest/globals';
+import {fireEvent, screen} from '@testing-library/react-native';
+import {measureRenders} from 'reassure';
+import {AsyncComponent} from './AsyncComponent';
 
 jest.setTimeout(600_000);
 
@@ -15,7 +15,7 @@ test('RN CLI - AsyncComponent (10 runs)', async () => {
     await screen.findByText('Count: 2');
   };
 
-  await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
+  await measureRenders(<AsyncComponent />, {scenario, runs: 10});
 });
 
 test('RN CLI - AsyncComponent (50 runs)', async () => {
@@ -27,5 +27,5 @@ test('RN CLI - AsyncComponent (50 runs)', async () => {
     await screen.findByText('Count: 2');
   };
 
-  await measureRenders(<AsyncComponent />, { scenario, runs: 50 });
+  await measureRenders(<AsyncComponent />, {scenario, runs: 50});
 });
