@@ -8,7 +8,7 @@ This example showcases Reassure setup for React Native CLI app.
 2. Copy `jest.config.js` from this repo for RNTL tests to run
 3. Install `reassure` and `danger` as `devDependencies`
 4. Run `yarn reassure init` to:
-   * generate `reassure-tests.sh` CI script 
-   * generate `dangerfile.js` config for `danger`
-   * add `.reasure` entry to `.gitignore`
+   - generate `reassure-tests.sh` CI script
+   - generate `dangerfile.js` config for `danger`
+   - add `.reasure` entry to `.gitignore`
 5. (optional) Add `configure({ testingLibrary: 'react-native' });` to your `jest-setup.js` file

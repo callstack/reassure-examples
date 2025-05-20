@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { View, Text, Pressable } from 'react-native';
-import { TestList } from './TestList';
+import {View, Text, Pressable} from 'react-native';
+import {TestList} from './TestList';
 
 export function AsyncComponent() {
   const [count, setCount] = React.useState(0);

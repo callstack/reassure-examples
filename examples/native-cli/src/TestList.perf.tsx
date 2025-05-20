@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { jest, test } from '@jest/globals';
-import { measureRenders } from 'reassure';
-import { TestList } from './TestList';
+import {jest, test} from '@jest/globals';
+import {measureRenders} from 'reassure';
+import {TestList} from './TestList';
 
 jest.setTimeout(60_000);
 

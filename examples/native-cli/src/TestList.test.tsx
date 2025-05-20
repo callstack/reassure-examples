@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { render, screen } from '@testing-library/react-native';
-import { expect, test } from '@jest/globals';
-import { TestList } from './TestList';
+import {render, screen} from '@testing-library/react-native';
+import {expect, test} from '@jest/globals';
+import {TestList} from './TestList';
 
 test('TestList', () => {
   render(<TestList count={10} />);
