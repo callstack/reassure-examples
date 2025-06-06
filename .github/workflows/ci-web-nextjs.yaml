@@ -3,10 +3,10 @@ name: Web - Next.js
 on:
   push:
     branches: [main]
-    paths: ['examples/web-nextjs/**']
+    paths: ['examples/web-nextjs/**', '.github/workflows/ci-web-nextjs.yaml']
   pull_request:
     branches: ['**']
-    paths: ['examples/web-nextjs/**']
+    paths: ['examples/web-nextjs/**', '.github/workflows/ci-web-nextjs.yaml']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

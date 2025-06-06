@@ -3,10 +3,10 @@ name: Web - Vite
 on:
   push:
     branches: [main]
-    paths: ['examples/web-vite/**']
+    paths: ['examples/web-vite/**', '.github/workflows/ci-web-vite.yaml']
   pull_request:
     branches: ['**']
-    paths: ['examples/web-vite/**']
+    paths: ['examples/web-vite/**', '.github/workflows/ci-web-vite.yaml']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

@@ -3,10 +3,10 @@ name: React Native - RN CLI
 on:
   push:
     branches: [main]
-    paths: ['examples/native-cli/**']
+    paths: ['examples/native-cli/**', '.github/workflows/ci-native-cli.yaml']
   pull_request:
     branches: ['**']
-    paths: ['examples/native-cli/**']
+    paths: ['examples/native-cli/**', '.github/workflows/ci-native-cli.yaml']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

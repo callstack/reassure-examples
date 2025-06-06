@@ -3,10 +3,10 @@ name: Examples
 on:
   push:
     branches: [main]
-    paths: ['examples/xxx/**']
+    paths: ['examples/**', '.github/**']
   pull_request:
     branches: ['**']
-    paths: ['examples/xxx/**']
+    paths: ['examples/**', '.github/**']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

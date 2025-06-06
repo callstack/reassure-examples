@@ -3,10 +3,10 @@ name: React Native - Expo
 on:
   push:
     branches: [main]
-    paths: ['examples/native-expo/**']
+    paths: ['examples/native-expo/**', '.github/workflows/ci-native-expo.yaml']
   pull_request:
     branches: ['**']
-    paths: ['examples/native-expo/**']
+    paths: ['examples/native-expo/**', '.github/workflows/ci-native-expo.yaml']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
