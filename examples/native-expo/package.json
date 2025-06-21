@@ -21,15 +21,15 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@testing-library/react-native": "^13.2.0",
-    "@types/jest": "^29.5.14",
+    "@types/jest": "^30.0.0",
     "@types/react": "~19.0.10",
     "@types/react-test-renderer": "19.0.0",
     "danger": "^13.0.4",
-    "jest": "^29.7.0",
+    "jest": "^30.0.2",
     "react-test-renderer": "19.0.0",
     "reassure": "^1.4.0",
     "typescript": "~5.8.3"
   },
   "private": true,
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.9.2"
 }
