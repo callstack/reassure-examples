@@ -35,7 +35,7 @@
     "jest": "^30.0.2",
     "prettier": "2.8.8",
     "react-test-renderer": "19.0.0",
-    "reassure": "^1.4.0",
+    "reassure": "^1.5.0",
     "typescript": "5.0.4"
   },
   "engines": {
