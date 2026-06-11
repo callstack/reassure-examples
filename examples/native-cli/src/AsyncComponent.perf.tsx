@@ -1,4 +1,3 @@
-import React from 'react';
 import {jest, test} from '@jest/globals';
 import {fireEvent, screen} from '@testing-library/react-native';
 import {measureRenders} from 'reassure';

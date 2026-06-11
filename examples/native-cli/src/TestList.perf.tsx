@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {jest, test} from '@jest/globals';
 import {measureRenders} from 'reassure';
 import {TestList} from './TestList';
