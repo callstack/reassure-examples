@@ -2,16 +2,11 @@ import * as React from 'react';
 import { View, Text, Pressable } from 'react-native';
 import { TestList } from './TestList';
 
-export function AsyncComponent() {
-  const [requested, setRequested] = React.useState(0);
+export function TestComponent() {
   const [count, setCount] = React.useState(0);
 
-  React.useEffect(() => {
-    setCount(requested);
-  }, [requested]);
-
   const handlePress = () => {
-    setRequested((r) => r + 1);
+    setCount((c) => c + 1);
   };
 
   return (
