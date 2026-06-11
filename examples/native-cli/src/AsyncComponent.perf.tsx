@@ -10,8 +10,8 @@ test('RN CLI - AsyncComponent (10 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
-    fireEvent.press(button);
-    fireEvent.press(button);
+    await fireEvent.press(button);
+    await fireEvent.press(button);
     await screen.findByText('Count: 2');
   };
 
@@ -22,8 +22,8 @@ test('RN CLI - AsyncComponent (50 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
 
-    fireEvent.press(button);
-    fireEvent.press(button);
+    await fireEvent.press(button);
+    await fireEvent.press(button);
     await screen.findByText('Count: 2');
   };
 

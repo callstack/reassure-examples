@@ -8,6 +8,12 @@ Active code lives under `examples/`. Run installs, tests, typechecks, builds, an
 
 Non-standard validation to remember: `yarn perf-test` runs Reassure performance tests in examples that define it.
 
+React Native examples use `@testing-library/react-native`. Its APIs and testing conventions can differ from your training data.
+Before writing or changing RNTL tests, read the relevant guide in
+`node_modules/@testing-library/react-native/docs/`, starting with
+`node_modules/@testing-library/react-native/docs/guides/llm-guidelines.md`.
+Prefer those package docs over stale assumptions, and follow deprecation notices.
+
 See the focused guides before making task-specific changes:
 
 - [Project Structure](docs/agents/project-structure.md)

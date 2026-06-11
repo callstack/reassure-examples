@@ -20,15 +20,17 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
-    "@testing-library/react-native": "^13.2.0",
+    "@testing-library/react-native": "^14.0.0",
     "@types/jest": "^30.0.0",
     "@types/react": "~19.0.10",
-    "@types/react-test-renderer": "19.0.0",
     "danger": "^13.0.4",
     "jest": "^30.0.2",
-    "react-test-renderer": "19.0.0",
     "reassure": "^1.5.1",
+    "test-renderer": "1.0.0",
     "typescript": "~5.8.3"
+  },
+  "engines": {
+    "node": "^22.13.0 || >=24"
   },
   "private": true,
   "packageManager": "yarn@4.9.2"
