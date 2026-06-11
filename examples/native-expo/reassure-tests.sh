@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e 
+set -e
 
 BASELINE_BRANCH=${GITHUB_BASE_REF:="main"}
 

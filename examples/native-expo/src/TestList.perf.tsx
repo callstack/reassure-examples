@@ -4,6 +4,6 @@ import { TestList } from './TestList';
 
 jest.setTimeout(60_000);
 
-test('React Native - Expo - TestList (100 items)', async () => {
+test('Expo - TestList (100 items)', async () => {
   await measureRenders(<TestList count={100} />, { runs: 10 });
 });

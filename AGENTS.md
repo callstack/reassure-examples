@@ -21,4 +21,5 @@ See the focused guides before making task-specific changes:
 - [Coding Style](docs/agents/coding-style.md)
 - [Testing](docs/agents/testing.md)
 - [Git Workflow](docs/agents/git-workflow.md)
+- [Recreating Examples](docs/agents/recreating-examples.md)
 - [Instruction Audit](docs/agents/instruction-audit.md)
