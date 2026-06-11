@@ -8,10 +8,9 @@ jest.setTimeout(600_000);
 test('React Native - Expo - AsyncComponent (10 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
-
     await fireEvent.press(button);
     await fireEvent.press(button);
-    await screen.findByText('Count: 2');
+    screen.getByText('Count: 2');
   };
 
   await measureRenders(<AsyncComponent />, { scenario, runs: 10 });
@@ -20,10 +19,9 @@ test('React Native - Expo - AsyncComponent (10 runs)', async () => {
 test('React Native - Expo - AsyncComponent (50 runs)', async () => {
   const scenario = async () => {
     const button = screen.getByText('Action');
-
     await fireEvent.press(button);
     await fireEvent.press(button);
-    await screen.findByText('Count: 2');
+    screen.getByText('Count: 2');
   };
 
   await measureRenders(<AsyncComponent />, { scenario, runs: 50 });
