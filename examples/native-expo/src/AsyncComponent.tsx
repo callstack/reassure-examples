@@ -6,7 +6,7 @@ export function AsyncComponent() {
   const [count, setCount] = React.useState(0);
 
   const handlePress = () => {
-    setTimeout(() => setCount((c) => c + 1), 10);
+    Promise.resolve().then(() => setCount((c) => c + 1));
   };
 
   return (
