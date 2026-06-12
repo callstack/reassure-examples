@@ -1,12 +1,8 @@
 # Git Workflow
 
-Recent history uses short imperative commit subjects, often with `chore:` for maintenance, for example:
+Do not create commits, stage files, or unstage files. The user handles all staging and committing, including while you are working. Expect that the user may stage or commit files at any point during a task — do not treat an unexpected git state as an error.
 
-```text
-chore: upgrade web-vite example
-```
-
-Keep commits focused on one example or one cross-example concern.
+Commit messages use short imperative subjects with a `chore:` prefix for maintenance work, e.g. `chore: upgrade web-vite example`.
 
 Pull requests should include:
 
