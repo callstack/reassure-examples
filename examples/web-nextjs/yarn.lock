@@ -425,59 +425,61 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/reassure-cli@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@callstack/reassure-cli@npm:1.5.1"
+"@callstack/reassure-cli@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@callstack/reassure-cli@npm:1.6.0"
   dependencies:
-    "@callstack/reassure-compare": "npm:1.5.1"
-    "@callstack/reassure-logger": "npm:1.5.1"
+    "@callstack/reassure-compare": "npm:1.6.0"
+    "@callstack/reassure-logger": "npm:1.6.0"
     chalk: "npm:4.1.2"
     simple-git: "npm:^3.36.0"
     yargs: "npm:^17.7.2"
   bin:
     reassure: lib/commonjs/bin.js
-  checksum: 10c0/c8157c9b5f2ebf346fba59653a5bfbfb9153aefed452a89e5a86b267e79f1bb093dcfe1ea72cc5de7f425c36aaaacba1957fa555f702ac24d8f5727d640a4e6e
+  checksum: 10c0/30ad3f9eb25951291fe0121900f7d8c248ce2cde0d5d48a4a918acef70273f65a2dd649ccc975fa3b2e90186a8b356bb4378be3e63f59ddd4d7f36e7e49c84cf
   languageName: node
   linkType: hard
 
-"@callstack/reassure-compare@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@callstack/reassure-compare@npm:1.5.1"
+"@callstack/reassure-compare@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@callstack/reassure-compare@npm:1.6.0"
   dependencies:
-    "@callstack/reassure-logger": "npm:1.5.1"
+    "@callstack/reassure-logger": "npm:1.6.0"
+    mathjs: "npm:^15.2.0"
     ts-markdown-builder: "npm:0.6.0"
     ts-regex-builder: "npm:^1.8.2"
     zod: "npm:^4.4.3"
-  checksum: 10c0/71a4ce34f2c094d1b7abffd5d11628b797f8fb2496f36f1419842b8c17e4deb812485c19222acf3fbcfa94fa87540b7aa38cb48a6f941a1c7d73f956a8d7eaf7
+  checksum: 10c0/d4f30eb719db3037223b3920b1c23e988d9f932d13de1bdfd66c96a310ac23776c95648d6e135595fe7926f4118cfc90b0a1fe3ed56f567178469afd20f558dc
   languageName: node
   linkType: hard
 
-"@callstack/reassure-danger@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@callstack/reassure-danger@npm:1.5.1"
-  checksum: 10c0/9b028e7a54cd8154d9c9f3f896791179742e89f800847ed59c992a6b12bd396e01fe20e55b718de12e51d0b9a7295de8b057d49846877cec9da7106329eec451
+"@callstack/reassure-danger@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@callstack/reassure-danger@npm:1.6.0"
+  checksum: 10c0/4f279c8536445abe06b43135a1d38ac00db662c8ec6b09509c9461f66d058fd22cae84e6081effb90957ef063c121bd63a07e4c767f03822eca6288a6e345833
   languageName: node
   linkType: hard
 
-"@callstack/reassure-logger@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@callstack/reassure-logger@npm:1.5.1"
+"@callstack/reassure-logger@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@callstack/reassure-logger@npm:1.6.0"
   dependencies:
     chalk: "npm:4.1.2"
-  checksum: 10c0/ba5768334abb8679cf6d0586b616169b0b0534216d87982ef38785159b7e7051b870bebe1c7c23cdb0224c1683b7cfd3602a3e5fab748c1cf54d72908f076e63
+  checksum: 10c0/943590744bd15b6ab69293c8bb256a440d9b4ea64e88f3d37dbb4d27c9cbd53aaa438f7069587ed503f6414c1118418f6938115cdee7df2cde5f50004dbd1446
   languageName: node
   linkType: hard
 
-"@callstack/reassure-measure@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@callstack/reassure-measure@npm:1.5.1"
+"@callstack/reassure-measure@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@callstack/reassure-measure@npm:1.6.0"
   dependencies:
-    "@callstack/reassure-logger": "npm:1.5.1"
+    "@callstack/reassure-logger": "npm:1.6.0"
     mathjs: "npm:^15.2.0"
     pretty-format: "npm:^30.4.1"
+    react-test-config: "npm:^1.0.0"
   peerDependencies:
     react: ">=18.0.0"
-  checksum: 10c0/cc6b5827b1363ad563768423cb15c7ad657e07093b624ff33d2703fbab6058ecfc11429c821cff2c3aab241057f9cb2419e9ee781dd76a9421eebd3d4d9d37ce
+  checksum: 10c0/7d5f1c418d7f2031f93b10f259b375d65ae7112c830d5ef24998d667a879fe3fb4a9985aa09ffcf2261ace7d8a8257d2086249ae74bc3a56b53f0e3fa0dcb91b
   languageName: node
   linkType: hard
 
@@ -7114,6 +7116,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-test-config@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "react-test-config@npm:1.0.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/74371e5e285ebf2045f423855d2217034964b30f91bb535d09df64f637c4ab3abf2729aa3a497c7d71f816d983e9023eb0d4655817a0673dead8c7baa0e96743
+  languageName: node
+  linkType: hard
+
 "react@npm:^19.0.0":
   version: 19.1.0
   resolution: "react@npm:19.1.0"
@@ -7128,17 +7139,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reassure@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "reassure@npm:1.5.1"
+"reassure@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "reassure@npm:1.6.0"
   dependencies:
-    "@callstack/reassure-cli": "npm:1.5.1"
-    "@callstack/reassure-compare": "npm:1.5.1"
-    "@callstack/reassure-danger": "npm:1.5.1"
-    "@callstack/reassure-measure": "npm:1.5.1"
+    "@callstack/reassure-cli": "npm:1.6.0"
+    "@callstack/reassure-compare": "npm:1.6.0"
+    "@callstack/reassure-danger": "npm:1.6.0"
+    "@callstack/reassure-measure": "npm:1.6.0"
   bin:
     reassure: lib/commonjs/bin/reassure.js
-  checksum: 10c0/acd2fd5a3b3a12bd4fb2ad3261f95323fb8d95c0799142ac5099788004081e7c06ff9276fbb77f33b81b7a6d57c7244ab7d1a866a7f909c57f8ae819132ea925
+  checksum: 10c0/9d8d8e3e2a841af141fb88de96cd379542e0a85ee511168cc9b959b26cd7d70a687b5455a148b65b38f200cec789fa55b87d15b52c120fb61420d427933e13ab
   languageName: node
   linkType: hard
 
@@ -8477,7 +8488,7 @@ __metadata:
     next: "npm:15.3.2"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
-    reassure: "npm:^1.5.1"
+    reassure: "npm:^1.6.0"
     tailwindcss: "npm:^4"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5"
