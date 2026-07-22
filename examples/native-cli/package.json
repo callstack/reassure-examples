@@ -33,7 +33,7 @@
     "eslint": "^8.19.0",
     "jest": "^30.0.2",
     "prettier": "2.8.8",
-    "reassure": "^1.5.1",
+    "reassure": "^1.6.0",
     "test-renderer": "1.0.0",
     "typescript": "5.0.4"
   },
