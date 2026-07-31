@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface TestListProps {
   count: number;
 }
@@ -19,11 +21,11 @@ interface ListItemProps {
 }
 
 const ListItem = ({ title }: ListItemProps) => {
-  // Uncomment to introduce a performance issue
-  // const [, forceRender] = React.useState<object>();
-  // React.useEffect(() => {
-  //   forceRender({});
-  // }, [title]);
+  // Intentionally causing an extra re-render
+  const [, forceRender] = React.useState<object>();
+  React.useEffect(() => {
+    forceRender({});
+  }, [title]);
 
   return (
     <div>
